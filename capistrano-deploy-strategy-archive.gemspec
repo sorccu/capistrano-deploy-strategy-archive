@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |gem|
   gem.name          = "capistrano-deploy-strategy-archive"
-  gem.version       = "0.1.0"
+  gem.version       = "0.1.1"
   gem.authors       = ["Simo Kinnunen"]
   gem.email         = ["simo@shoqolate.com"]
   gem.homepage      = "https://github.com/sorccu/capistrano-deploy-strategy-archive"
