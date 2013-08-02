@@ -91,7 +91,9 @@ module Capistrano
 
           # Distributes the file to the remote hosts.
           def distribute!
-            upload(filename, remote_filename)
+            args = [ filename, remote_filename ]
+            args << { :via => configuration[:copy_via] } if configuration[:copy_via]
+            upload(*args)
             decompress_remote_file
           end
       end
